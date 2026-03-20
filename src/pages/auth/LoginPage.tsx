@@ -25,7 +25,7 @@ export function LoginPage() {
   const handleGoogle = async () => {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: window.location.origin + '/autopartes-web/' },
+      options: { redirectTo: window.location.origin + '/battuta_mvp/' },
     })
   }
 
